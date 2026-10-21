@@ -1,0 +1,266 @@
+// Copiado por scripts/sincronizar.mjs desde Doktur-front. NO EDITAR: cambia packages/tokens/tokens.json allá.
+// Generado por packages/tokens/generar.mjs — NO EDITAR. Edita packages/tokens/tokens.json.
+export const tokens = {
+  "paleta": {
+    "marca": {
+      "50": "#e7f4f0",
+      "100": "#c5e4da",
+      "200": "#9dd1c0",
+      "300": "#6cb9a2",
+      "400": "#3f9f85",
+      "500": "#1f856b",
+      "600": "#126f58",
+      "700": "#0b5c4a",
+      "800": "#07473a",
+      "900": "#04322a"
+    },
+    "neutro": {
+      "0": "#ffffff",
+      "50": "#f4f6f6",
+      "100": "#e8ecec",
+      "200": "#d3d9d8",
+      "300": "#b7c1bf",
+      "400": "#8c9896",
+      "500": "#66726f",
+      "600": "#4b5553",
+      "700": "#363e3c",
+      "800": "#232928",
+      "900": "#151918",
+      "950": "#0c0f0e"
+    },
+    "peligro": {
+      "50": "#fdecea",
+      "100": "#f9cfca",
+      "300": "#ef8a80",
+      "500": "#d93f33",
+      "700": "#b3261e",
+      "800": "#8c1d17",
+      "900": "#5e130f"
+    },
+    "aviso": {
+      "50": "#fff6d6",
+      "100": "#ffe9a3",
+      "300": "#f2c94c",
+      "500": "#c99400",
+      "700": "#8a6600",
+      "800": "#6b4f00",
+      "900": "#4a3600"
+    },
+    "exito": {
+      "50": "#e8f6ec",
+      "100": "#c6e9d0",
+      "300": "#7cc994",
+      "500": "#2e9a52",
+      "700": "#1d6e38",
+      "800": "#15542a"
+    },
+    "info": {
+      "50": "#e8f1fb",
+      "100": "#c7dcf5",
+      "300": "#86b2e8",
+      "500": "#2f7bd1",
+      "600": "#1f63b3",
+      "700": "#0a5a8c",
+      "800": "#08466d"
+    }
+  },
+  "temas": {
+    "claro": {
+      "fondo": {
+        "base": "#ffffff",
+        "sutil": "#f4f6f6",
+        "elevado": "#ffffff",
+        "hundido": "#e8ecec",
+        "invertido": "#151918",
+        "marca": "#e7f4f0"
+      },
+      "texto": {
+        "base": "#151918",
+        "suave": "#4b5553",
+        "invertido": "#ffffff",
+        "enlace": "#0a5a8c",
+        "marca": "#0b5c4a"
+      },
+      "borde": {
+        "base": "#d3d9d8",
+        "fuerte": "#66726f"
+      },
+      "accion": {
+        "primaria": {
+          "fondo": "#0b5c4a",
+          "fondoHover": "#07473a",
+          "texto": "#ffffff"
+        },
+        "secundaria": {
+          "fondo": "#ffffff",
+          "fondoHover": "#e7f4f0",
+          "texto": "#07473a",
+          "borde": "#0b5c4a"
+        },
+        "deshabilitada": {
+          "fondo": "#e8ecec",
+          "texto": "#66726f"
+        }
+      },
+      "emergencia": {
+        "fondo": "#b3261e",
+        "fondoHover": "#8c1d17",
+        "texto": "#ffffff",
+        "fondoSuave": "#fdecea",
+        "textoSuave": "#8c1d17",
+        "borde": "#b3261e"
+      },
+      "aviso": {
+        "fondo": "#fff6d6",
+        "texto": "#151918",
+        "borde": "#8a6600"
+      },
+      "exito": {
+        "fondo": "#e8f6ec",
+        "texto": "#15542a",
+        "borde": "#1d6e38"
+      },
+      "informacion": {
+        "fondo": "#e8f1fb",
+        "texto": "#08466d",
+        "borde": "#1f63b3"
+      },
+      "foco": "#1f63b3",
+      "superposicion": "rgba(12, 15, 14, 0.55)",
+      "destacado": {
+        "fondoInicio": "#0b5c4a",
+        "fondoFin": "#04322a",
+        "texto": "#ffffff",
+        "textoSuave": "#c5e4da"
+      }
+    },
+    "oscuro": {
+      "fondo": {
+        "base": "#0c0f0e",
+        "sutil": "#151918",
+        "elevado": "#232928",
+        "hundido": "#0c0f0e",
+        "invertido": "#f4f6f6",
+        "marca": "#04322a"
+      },
+      "texto": {
+        "base": "#f4f6f6",
+        "suave": "#b7c1bf",
+        "invertido": "#151918",
+        "enlace": "#86b2e8",
+        "marca": "#9dd1c0"
+      },
+      "borde": {
+        "base": "#363e3c",
+        "fuerte": "#8c9896"
+      },
+      "accion": {
+        "primaria": {
+          "fondo": "#6cb9a2",
+          "fondoHover": "#9dd1c0",
+          "texto": "#0c0f0e"
+        },
+        "secundaria": {
+          "fondo": "#151918",
+          "fondoHover": "#232928",
+          "texto": "#9dd1c0",
+          "borde": "#6cb9a2"
+        },
+        "deshabilitada": {
+          "fondo": "#232928",
+          "texto": "#8c9896"
+        }
+      },
+      "emergencia": {
+        "fondo": "#b3261e",
+        "fondoHover": "#8c1d17",
+        "texto": "#ffffff",
+        "fondoSuave": "#5e130f",
+        "textoSuave": "#f9cfca",
+        "borde": "#ef8a80"
+      },
+      "aviso": {
+        "fondo": "#4a3600",
+        "texto": "#fff6d6",
+        "borde": "#f2c94c"
+      },
+      "exito": {
+        "fondo": "#15542a",
+        "texto": "#e8f6ec",
+        "borde": "#7cc994"
+      },
+      "informacion": {
+        "fondo": "#08466d",
+        "texto": "#e8f1fb",
+        "borde": "#86b2e8"
+      },
+      "foco": "#86b2e8",
+      "superposicion": "rgba(0, 0, 0, 0.7)",
+      "destacado": {
+        "fondoInicio": "#07473a",
+        "fondoFin": "#04322a",
+        "texto": "#ffffff",
+        "textoSuave": "#9dd1c0"
+      }
+    }
+  },
+  "espacio": {
+    "0": "0",
+    "1": "0.25rem",
+    "2": "0.5rem",
+    "3": "0.75rem",
+    "4": "1rem",
+    "5": "1.25rem",
+    "6": "1.5rem",
+    "8": "2rem",
+    "10": "2.5rem",
+    "12": "3rem"
+  },
+  "radio": {
+    "sm": "0.375rem",
+    "md": "0.625rem",
+    "lg": "1rem",
+    "xl": "1.5rem",
+    "pildora": "999px"
+  },
+  "tipografia": {
+    "familia": {
+      "base": "'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+      "mono": "ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace"
+    },
+    "tamano": {
+      "xs": "0.8rem",
+      "sm": "0.9rem",
+      "base": "1rem",
+      "lg": "1.15rem",
+      "xl": "1.35rem",
+      "2xl": "1.75rem",
+      "3xl": "2.2rem"
+    },
+    "peso": {
+      "normal": "400",
+      "medio": "500",
+      "seminegrita": "600",
+      "negrita": "700",
+      "extra": "800"
+    },
+    "interlineado": {
+      "ajustado": "1.25",
+      "base": "1.6"
+    }
+  },
+  "sombra": {
+    "sm": "0 1px 2px rgba(12, 15, 14, 0.08)",
+    "md": "0 4px 12px rgba(12, 15, 14, 0.10)",
+    "lg": "0 12px 32px rgba(12, 15, 14, 0.14)"
+  },
+  "objetivoTactil": {
+    "minimo": "44px",
+    "comodo": "48px"
+  }
+} as const;
+
+export type NombreTema = keyof typeof tokens.temas;
+export type TemaColores = (typeof tokens.temas)['claro'];
+export const temas = tokens.temas;
+export const paleta = tokens.paleta;

@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  secretos:
+    name: Búsqueda de secretos
+    runs-on: ubuntu-24.04
+    steps:
+      # Acciones fijadas por SHA (SEC-19). Versión indicada en el comentario.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  app:
+    name: App (tipos, pruebas, auditoría, bundles)
+    runs-on: ubuntu-24.04
+    env:
+      CI: 'true'
+      EXPO_NO_TELEMETRY: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Instalar dependencias (exactas, desde package-lock.json)
+        run: npm ci
+      # Los archivos sincronizados (tokens, emergencias, tipos de la API) están versionados:
+      # la CI verifica la app tal como está; `npm run sincronizar` se ejecuta al cambiar los otros repositorios.
+      - name: Verificación completa
+        run: npm run verificar
